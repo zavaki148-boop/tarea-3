@@ -1,0 +1,448 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="estilosmenu2.css">
+
+    <title>NOVA | Formulario</title>
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="encabezado">
+
+        <div class="logo">NOVA</div>
+
+        <p>Moda que define tu estilo</p>
+
+    </header>
+
+
+    <!-- CONTENEDOR PRINCIPAL -->
+    <main class="contenedor">
+
+        <div class="titulo">
+
+            <span>NOVA FASHION</span>
+
+            <h1>Formulario de estilo</h1>
+
+            <p>Cuéntanos un poco sobre tus preferencias de moda</p>
+
+        </div>
+
+
+        <form action="proceso.php" method="post" enctype="multipart/form-data">
+
+
+            <!-- =====================================
+                 GRUPO 1: DATOS PERSONALES
+            ====================================== -->
+
+            <fieldset>
+
+                <legend>Datos Personales</legend>
+
+
+                <label for="nombre">Nombre completo</label>
+
+                <input type="text"
+                       id="nombre"
+                       name="nombre"
+                       placeholder="Kiara Zavaleta"
+                       required>
+
+
+                <label for="mail">Correo electrónico</label>
+
+                <input type="email"
+                       id="mail"
+                       name="mail"
+                       placeholder="correo@ejemplo.com">
+
+
+                <label for="password">Contraseña</label>
+
+                <input type="password"
+                       id="password"
+                       name="password"
+                       placeholder="Crea una contraseña">
+
+
+                <label for="telefono">Teléfono</label>
+
+                <input type="tel"
+                       id="telefono"
+                       name="telefono"
+                       placeholder="940 435 297">
+
+
+                <label for="web">Sitio Web</label>
+
+                <input type="url"
+                       id="web"
+                       name="web"
+                       placeholder="https://ejemplo.com">
+
+
+                <label for="busqueda">¿Qué prenda estás buscando?</label>
+
+                <input type="search"
+                       id="busqueda"
+                       name="busqueda"
+                       placeholder="Ej. polo, casaca, pantalón...">
+
+            </fieldset>
+
+
+
+            <!-- =====================================
+                 GRUPO 2: EDAD Y SATISFACCIÓN
+            ====================================== -->
+
+            <fieldset>
+
+                <legend>Información de Compra</legend>
+
+
+                <label for="edad">Edad</label>
+
+                <input type="number"
+                       id="edad"
+                       name="edad"
+                       min="1"
+                       max="75"
+                       placeholder="Ej. 18">
+
+
+                <label for="satisfaccion">
+                    ¿Qué tan importante es el estilo para ti?
+                </label>
+
+                <input type="range"
+                       id="satisfaccion"
+                       name="satisfaccion"
+                       min="1"
+                       max="10">
+
+            </fieldset>
+
+
+
+            <!-- =====================================
+                 GRUPO 3: FECHA Y HORA
+            ====================================== -->
+
+            <fieldset>
+
+                <legend>Fecha y Hora</legend>
+
+
+                <label for="fecha">Fecha de nacimiento</label>
+
+                <input type="date"
+                       id="fecha"
+                       name="fecha">
+
+
+                <label for="hora">Horario preferido para recibir atención</label>
+
+                <input type="time"
+                       id="hora"
+                       name="hora">
+
+
+                <label for="fecha-hora">Fecha y hora de entrega</label>
+
+                <input type="datetime-local"
+                       id="fecha-hora"
+                       name="fecha-hora">
+
+
+                <label for="mes">Mes en el que deseas comprar</label>
+
+                <input type="month"
+                       id="mes"
+                       name="mes">
+
+
+                <label for="semana">Semana de compra</label>
+
+                <input type="week"
+                       id="semana"
+                       name="semana">
+
+            </fieldset>
+
+
+
+            <!-- =====================================
+                 GRUPO 4: PREFERENCIAS DE MODA
+            ====================================== -->
+
+            <fieldset>
+
+                <legend>Preferencias de Moda</legend>
+
+
+                <p class="subtitulo">
+                    ¿Qué tipo de ropa buscas?
+                </p>
+
+
+                <div class="opciones">
+
+                    <label>
+                        <input type="checkbox"
+                               name="ropa[]"
+                               value="Polos">
+
+                        Polos
+                    </label>
+
+
+                    <label>
+                        <input type="checkbox"
+                               name="ropa[]"
+                               value="Poleras">
+
+                        Poleras
+                    </label>
+
+
+                    <label>
+                        <input type="checkbox"
+                               name="ropa[]"
+                               value="Pantalones">
+
+                        Pantalones
+                    </label>
+
+
+                    <label>
+                        <input type="checkbox"
+                               name="ropa[]"
+                               value="Casacas">
+
+                        Casacas
+                    </label>
+
+
+                    <label>
+                        <input type="checkbox"
+                               name="ropa[]"
+                               value="Vestidos">
+
+                        Vestidos
+                    </label>
+
+
+                    <label>
+                        <input type="checkbox"
+                               name="ropa[]"
+                               value="Faldas">
+
+                        Faldas
+                    </label>
+
+                </div>
+
+
+
+                <p class="subtitulo">
+                    ¿Qué estilo prefieres?
+                </p>
+
+
+                <div class="opciones">
+
+                    <label>
+                        <input type="radio"
+                               name="estilo"
+                               value="Casual">
+
+                        Casual
+                    </label>
+
+
+                    <label>
+                        <input type="radio"
+                               name="estilo"
+                               value="Urbano">
+
+                        Urbano
+                    </label>
+
+
+                    <label>
+                        <input type="radio"
+                               name="estilo"
+                               value="Elegante">
+
+                        Elegante
+                    </label>
+
+                </div>
+
+
+
+                <label for="talla">
+                    Talla habitual
+                </label>
+
+
+                <select id="talla"
+                        name="talla">
+
+                    <option value="">
+                        Selecciona tu talla
+                    </option>
+
+                    <option value="XS">XS</option>
+
+                    <option value="S">S</option>
+
+                    <option value="M">M</option>
+
+                    <option value="L">L</option>
+
+                    <option value="XL">XL</option>
+
+                </select>
+
+
+
+                <label for="prenda">
+                    Prenda favorita
+                </label>
+
+
+                <input type="text"
+                       list="lista"
+                       id="prenda"
+                       name="prenda"
+                       placeholder="Escribe o selecciona una prenda">
+
+
+                <datalist id="lista">
+
+                    <option value="Polo"></option>
+
+                    <option value="Polera"></option>
+
+                    <option value="Pantalón"></option>
+
+                    <option value="Casaca"></option>
+
+                    <option value="Vestido"></option>
+
+                    <option value="Falda"></option>
+
+                </datalist>
+
+            </fieldset>
+
+
+
+            <!-- =====================================
+                 GRUPO 5: ARCHIVOS Y COLOR
+            ====================================== -->
+
+            <fieldset>
+
+                <legend>Personaliza tu estilo</legend>
+
+
+                <label for="archivo">
+                    Sube una referencia de estilo
+                </label>
+
+
+                <input type="file"
+                       id="archivo"
+                       name="archivo">
+
+
+                <label for="color">
+                    Color que más utilizas en tu ropa
+                </label>
+
+
+                <input type="color"
+                       id="color"
+                       name="color">
+
+            </fieldset>
+
+
+
+            <!-- =====================================
+                 GRUPO 6: COMENTARIO
+            ====================================== -->
+
+            <fieldset>
+
+                <legend>Cuéntanos más</legend>
+
+
+                <label for="biografia">
+                    ¿Qué buscas en una tienda de ropa?
+                </label>
+
+
+                <textarea id="biografia"
+                          name="biografia"
+                          rows="5"
+                          placeholder="Cuéntanos qué prendas, estilos o tendencias te gustaría encontrar en NOVA..."></textarea>
+
+            </fieldset>
+
+
+
+            <!-- =====================================
+                 BOTONES
+            ====================================== -->
+
+            <div class="botones">
+
+
+                <input type="submit"
+                       value="ENVIAR">
+
+
+                <input type="reset"
+                       value="LIMPIAR">
+
+
+            </div>
+
+
+        </form>
+
+    </main>
+
+
+
+    <!-- =====================================
+         FOOTER
+    ====================================== -->
+
+    <footer>
+
+        <p>
+            © 2026 NOVA — Moda que define tu estilo
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
+
+

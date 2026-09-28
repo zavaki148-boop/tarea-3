@@ -1,0 +1,497 @@
+```css
+/* =========================================
+   NOVA - FORMULARIO FUTURISTA
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* IMAGEN DE FONDO */
+    background:
+        linear-gradient(rgba(5, 8, 15, 0.78), rgba(5, 8, 15, 0.88)),
+        url("https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=2000&q=80");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+
+/* =========================================
+   ENCABEZADO
+========================================= */
+
+.encabezado {
+    width: 100%;
+    padding: 20px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: rgba(0, 0, 0, 0.55);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 8px;
+
+    color: #ffffff;
+
+    text-shadow:
+        0 0 8px rgba(255, 255, 255, 0.8),
+        0 0 20px rgba(120, 190, 255, 0.6);
+}
+
+.encabezado p {
+    font-size: 14px;
+    color: #cfd8e3;
+}
+
+
+/* =========================================
+   CONTENEDOR
+========================================= */
+
+.contenedor {
+    width: 90%;
+    max-width: 900px;
+
+    margin: 50px auto;
+
+    padding: 40px;
+
+    background: rgba(10, 15, 25, 0.72);
+
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    border-radius: 20px;
+
+    backdrop-filter: blur(15px);
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.6),
+        0 0 40px rgba(100, 170, 255, 0.08);
+}
+
+
+/* =========================================
+   TÍTULO
+========================================= */
+
+.titulo {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.titulo span {
+    font-size: 14px;
+    letter-spacing: 7px;
+    color: #aebdca;
+}
+
+.titulo h1 {
+    margin-top: 8px;
+
+    font-size: 38px;
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    text-shadow:
+        0 0 10px rgba(255, 255, 255, 0.35);
+}
+
+.titulo p {
+    margin-top: 10px;
+    color: #aab5c2;
+}
+
+
+/* =========================================
+   FORMULARIO
+========================================= */
+
+form {
+    width: 100%;
+}
+
+
+/* =========================================
+   GRUPOS
+========================================= */
+
+fieldset {
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    border-radius: 14px;
+
+    padding: 25px;
+
+    margin-bottom: 25px;
+
+    background: rgba(255, 255, 255, 0.035);
+}
+
+legend {
+    padding: 0 12px;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    color: #ffffff;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================
+   ETIQUETAS
+========================================= */
+
+label {
+    display: block;
+
+    margin-top: 17px;
+    margin-bottom: 7px;
+
+    color: #dce4ec;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   CAMPOS
+========================================= */
+
+input,
+select,
+textarea {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border-radius: 9px;
+
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    background: rgba(0, 0, 0, 0.35);
+
+    color: white;
+
+    outline: none;
+
+    font-size: 14px;
+
+    transition: 0.3s ease;
+}
+
+
+/* PLACEHOLDER */
+
+input::placeholder,
+textarea::placeholder {
+    color: #7f8b98;
+}
+
+
+/* EFECTO AL SELECCIONAR */
+
+input:focus,
+select:focus,
+textarea:focus {
+
+    border-color: #9ecbff;
+
+    box-shadow:
+        0 0 8px rgba(120, 190, 255, 0.4),
+        0 0 20px rgba(120, 190, 255, 0.12);
+
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+/* =========================================
+   SELECT
+========================================= */
+
+select {
+    cursor: pointer;
+}
+
+select option {
+    background: #10151d;
+    color: white;
+}
+
+
+/* =========================================
+   RANGE
+========================================= */
+
+input[type="range"] {
+    padding: 0;
+
+    accent-color: #9ecbff;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   RADIO Y CHECKBOX
+========================================= */
+
+.opciones {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px 20px;
+
+    margin-top: 10px;
+}
+
+.opciones label {
+    margin: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    cursor: pointer;
+
+    color: #cbd5df;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+
+    accent-color: #9ecbff;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   SUBTÍTULOS
+========================================= */
+
+.subtitulo {
+    margin-top: 10px;
+    margin-bottom: 5px;
+
+    color: #ffffff;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   ARCHIVO
+========================================= */
+
+input[type="file"] {
+    cursor: pointer;
+    padding: 10px;
+}
+
+
+/* =========================================
+   COLOR
+========================================= */
+
+input[type="color"] {
+    height: 50px;
+
+    padding: 5px;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   TEXTAREA
+========================================= */
+
+textarea {
+    resize: vertical;
+
+    min-height: 120px;
+}
+
+
+/* =========================================
+   BOTONES
+========================================= */
+
+.botones {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    margin-top: 30px;
+}
+
+.botones input {
+
+    width: 180px;
+
+    padding: 14px;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+
+/* BOTÓN ENVIAR */
+
+.botones input[type="submit"] {
+
+    background: #ffffff;
+
+    color: #080b10;
+
+    border: none;
+
+    box-shadow:
+        0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+.botones input[type="submit"]:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 0 20px rgba(255, 255, 255, 0.6),
+        0 0 40px rgba(120, 190, 255, 0.3);
+}
+
+
+/* BOTÓN LIMPIAR */
+
+.botones input[type="reset"] {
+
+    background: transparent;
+
+    color: white;
+
+    border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.botones input[type="reset"]:hover {
+
+    background: rgba(255, 255, 255, 0.1);
+
+    border-color: white;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+
+    text-align: center;
+
+    padding: 25px;
+
+    color: #8e9aa7;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   ANIMACIÓN DE ENTRADA
+========================================= */
+
+.contenedor {
+
+    animation: aparecer 0.8s ease;
+}
+
+@keyframes aparecer {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================================
+   RESPONSIVE - CELULAR
+========================================= */
+
+@media (max-width: 600px) {
+
+    .encabezado {
+        padding: 18px 5%;
+    }
+
+    .encabezado p {
+        display: none;
+    }
+
+    .contenedor {
+        width: 94%;
+
+        padding: 22px;
+
+        margin: 25px auto;
+    }
+
+    .titulo h1 {
+        font-size: 28px;
+    }
+
+    fieldset {
+        padding: 18px;
+    }
+
+    .botones {
+        flex-direction: column;
+    }
+
+    .botones input {
+        width: 100%;
+    }
+
+}
+
